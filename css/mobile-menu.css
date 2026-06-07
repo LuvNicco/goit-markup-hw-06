@@ -12,8 +12,6 @@
 
     background-color: #ffffff;
 
-    padding: 72px 24px 40px 16px;
-
     display: flex;
     flex-direction: column;
 
@@ -66,6 +64,7 @@
     letter-spacing: 0.02em;
 
     color: #2e2f42;
+    text-decoration: none;
 }
 
 .mobile-nav-link.current {
@@ -103,7 +102,7 @@
 
 .mobile-social-list {
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .mobile-social-link {
