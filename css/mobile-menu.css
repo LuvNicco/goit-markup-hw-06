@@ -20,6 +20,23 @@
     z-index: 999;
 }
 
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: 72px 16px 40px;
+}
+
 .mobile-menu .modal-close-btn {
     position: absolute;
     top: 24px;

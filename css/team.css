@@ -45,6 +45,16 @@ background-color: #ffffff;
     }
 }
 
+@media screen and (min-width: 1158px) {
+    .team-list {
+        flex-wrap: nowrap;
+    }
+
+    .team-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+}
+
 .team-image {
     display: block;
 }

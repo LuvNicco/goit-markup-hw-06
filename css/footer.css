@@ -34,7 +34,7 @@
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-text {
@@ -65,13 +65,15 @@
         flex-wrap: wrap;
         align-items: baseline;
         text-align: left;
-        gap: 24px;
+
+        column-gap: 24px;
+        row-gap: 72px;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .footer-content {
-        margin-right: 120px;
+        margin-right: 0px;
     }
 
     .footer-subscribe {
@@ -141,6 +143,15 @@
         align-items: center;
         gap: 16px;
     }
+        @media screen and (min-width: 768px) {
+            .footer-subscribe {
+                text-align: left;
+            }
+    
+            .footer-subscribe-form {
+                align-items: flex-start;
+            }
+        }
 
  .footer-subscribe-input {
         width: 288px;
