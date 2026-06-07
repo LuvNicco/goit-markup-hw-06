@@ -15,6 +15,10 @@
     pointer-events: none;
 
     background-color: rgba(46, 47, 66, 0.4);
+
+    transition:
+            opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -24,8 +28,8 @@
 }
 
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: calc(100% - 32px);
+    max-width: 392px;
 
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -38,6 +42,15 @@
     position: relative;
 
     padding: 72px 24px 24px 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        min-height: 584px;
+
+        padding: 72px 24px 24px;
+    }
 }
 
 .modal-close-btn {

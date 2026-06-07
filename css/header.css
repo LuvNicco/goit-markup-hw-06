@@ -77,6 +77,33 @@
     gap: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .address .list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .address .link-mailto,
+    .address .link-tel {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .address .list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .address .link-mailto,
+    .address .link-tel {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
 .address .link-mailto,
 .address .link-tel {
     font-weight: 400;
@@ -95,4 +122,40 @@
 .address .link-tel:focus,
 .address .link-tel:hover {
     color: #404bbf;
+}
+
+.menu-open-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.menu-open-icon {
+    fill: #2f2f37;
+}
+
+.nav,
+.address {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-open-btn {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .address {
+        display: block;
+    }
 }
