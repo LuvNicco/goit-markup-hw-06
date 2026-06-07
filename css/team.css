@@ -1,6 +1,12 @@
 .team {
-        padding: 120px 0px;
+        padding: 96px 0px;
         background-color: #f4f4fd;
+}
+
+@media screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0;
+    }
 }
 
 .team-title {
